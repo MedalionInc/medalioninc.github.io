@@ -3,107 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Privacy Policy for the Cozy Cafe mobile game by Medalion Inc.">
-  <title>Cozy Cafe — Privacy Policy</title>
+  <meta name="description" content="MedalionInc — independent games and official support resources.">
+  <title>MedalionInc — Games</title>
   <style>
-    :root{color-scheme:light;--bg:#fff8ec;--card:#fffdf8;--ink:#3d2a1f;--muted:#786458;--accent:#e98a24;--line:#eddcc8}
-    *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#fff3dc 0,#fffaf2 280px,#fff8ec 100%);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
-    .wrap{width:min(900px,calc(100% - 32px));margin:0 auto;padding:42px 0 64px}
-    header{display:flex;gap:20px;align-items:flex-start;justify-content:space-between;margin-bottom:24px}.brand{display:flex;gap:14px;align-items:center}.mark{display:grid;place-items:center;width:54px;height:54px;border-radius:17px;background:var(--accent);color:#fff;font-size:28px;box-shadow:0 10px 24px #d9781930}
-    h1{font-size:clamp(28px,5vw,43px);line-height:1.12;margin:0 0 6px}h2{font-size:22px;line-height:1.25;margin:32px 0 10px}p,li{color:var(--muted)}p{margin:8px 0}ul{padding-left:22px}a{color:#b85e08;text-underline-offset:3px}.meta{font-size:14px}.switch{display:flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:12px;background:#fff}.switch button{border:0;border-radius:8px;padding:8px 12px;background:transparent;color:var(--muted);font-weight:700;cursor:pointer}.switch button.active{background:var(--accent);color:#fff}
-    main{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,5vw,48px);box-shadow:0 22px 60px #6f431513}.notice{padding:16px 18px;border-radius:14px;background:#fff3dc;border-left:4px solid var(--accent)}.contact{margin-top:30px;padding:20px;border-radius:16px;background:#fff3dc}.lang[hidden]{display:none}footer{text-align:center;color:var(--muted);font-size:13px;padding-top:24px}
-    @media(max-width:620px){.wrap{padding-top:24px}header{display:block}.switch{width:max-content;margin-top:18px}main{border-radius:18px}.mark{width:48px;height:48px}}
+    :root{color-scheme:light;--paper:#fffaf0;--card:#fffdf8;--ink:#38271d;--muted:#78665b;--orange:#ef8d25;--orange2:#ffb134;--line:#eddcc6;--shadow:0 24px 70px rgba(91,55,22,.14)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(circle at 15% 0,#ffe3ae 0,transparent 34%),linear-gradient(180deg,#fff6e6,#fffaf2 55%,#fff7e9);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit}.wrap{width:min(1040px,calc(100% - 32px));margin:auto;padding:28px 0 60px}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:8px 0 34px}.brand{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:850;letter-spacing:-.02em}.mark{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:linear-gradient(145deg,var(--orange2),var(--orange));color:white;font-size:23px;box-shadow:0 10px 26px #dc791f3b}.navlinks{display:flex;gap:22px}.navlinks a{text-decoration:none;color:var(--muted);font-weight:700}.navlinks a:hover{color:var(--ink)}
+    .hero{display:grid;grid-template-columns:1.18fr .82fr;gap:42px;align-items:center;padding:56px clamp(26px,6vw,72px);background:rgba(255,253,248,.86);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow);backdrop-filter:blur(12px)}
+    .eyebrow{display:inline-flex;padding:7px 12px;border-radius:999px;background:#fff0d3;color:#a6530c;font-size:13px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.hero h1{margin:18px 0 16px;font-size:clamp(42px,7vw,74px);line-height:.98;letter-spacing:-.055em}.hero p{max-width:610px;margin:0;color:var(--muted);font-size:clamp(17px,2vw,21px)}
+    .scene{position:relative;min-height:310px;display:grid;place-items:center}.sun{position:absolute;width:260px;height:260px;border-radius:50%;background:linear-gradient(145deg,#ffd36d,#ff9b25);box-shadow:0 24px 70px #ec8a283d}.cafe{position:relative;width:240px;padding:30px 24px 24px;border-radius:28px;background:#fff7e5;border:6px solid #fff;box-shadow:0 18px 45px rgba(92,49,15,.22);text-align:center;transform:rotate(2deg)}.cafe .emoji{font-size:80px;line-height:1}.cafe strong{display:block;margin-top:12px;font-size:25px}.spark{position:absolute;font-size:33px}.s1{top:20px;right:18px}.s2{bottom:24px;left:8px}
+    section{padding-top:58px}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:20px}.section-head h2{margin:0;font-size:clamp(28px,4vw,40px);letter-spacing:-.035em}.section-head p{margin:0;color:var(--muted)}
+    .games{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.game{padding:28px;border:1px solid var(--line);border-radius:24px;background:var(--card);box-shadow:0 12px 35px rgba(94,54,20,.08)}.game-icon{display:grid;place-items:center;width:68px;height:68px;border-radius:20px;background:linear-gradient(145deg,#ffcf67,#f18a22);font-size:35px}.game h3{margin:18px 0 6px;font-size:25px}.game p{margin:0 0 20px;color:var(--muted)}.button{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:12px;background:var(--ink);color:#fff;text-decoration:none;font-weight:800}.button:hover{background:#5a3a28}.coming{display:flex;min-height:230px;align-items:center;justify-content:center;text-align:center;border-style:dashed;color:var(--muted)}
+    .support{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:28px;border-radius:22px;background:#3e2b20;color:#fff}.support h2{margin:0 0 4px;font-size:28px}.support p{margin:0;color:#dfcfc4}.support a{color:white;font-weight:800;text-underline-offset:3px}footer{display:flex;justify-content:space-between;gap:20px;padding:30px 4px 0;color:var(--muted);font-size:14px}footer a{text-underline-offset:3px}
+    @media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:38px 24px}.scene{min-height:260px}.sun{width:220px;height:220px}.cafe{width:210px}.games{grid-template-columns:1fr}.support{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:6px}footer{display:block}footer span{display:block;margin-top:6px}}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <div class="brand"><div class="mark" aria-hidden="true">☕</div><div><h1>Cozy Cafe</h1><p class="meta">Privacy Policy · Политика конфиденциальности</p></div></div>
-      <div class="switch" aria-label="Language"><button type="button" data-lang="en" class="active">English</button><button type="button" data-lang="ru">Русский</button></div>
-    </header>
+    <nav>
+      <div class="brand"><span class="mark" aria-hidden="true">M</span>MedalionInc</div>
+      <div class="navlinks"><a href="#games">Games</a><a href="#support">Support</a></div>
+    </nav>
     <main>
-      <article id="en" class="lang">
-        <p class="meta"><strong>Effective date:</strong> November 14, 2026</p>
-        <div class="notice"><strong>Summary:</strong> Cozy Cafe does not require an account and stores game progress locally on your device. The app uses Yandex Mobile Ads and Unity Ads to display rewarded and interstitial advertising.</div>
-        <h2>1. Who we are</h2>
-        <p>This Privacy Policy applies to the Android game <strong>Cozy Cafe</strong> (package name <code>com.medalioninc.cozycafe</code>), provided by <strong>Medalion Inc</strong> (“we”, “us”, or “the developer”).</p>
-        <h2>2. Information handled by the app</h2>
-        <p>The game itself does not ask you to create an account and does not directly request your name, email address, phone number, contacts, photos, microphone, camera, or precise location.</p>
-        <ul>
-          <li><strong>Local game data:</strong> progress, settings, earned currency, upgrades, and similar gameplay information are stored locally on your device.</li>
-          <li><strong>System language:</strong> the app reads the primary system language to select the game language and the advertising provider. This selection is performed on the device.</li>
-          <li><strong>Technical and advertising data:</strong> third-party advertising SDKs may process device or advertising identifiers, IP-derived approximate location, ad views and interactions, app usage signals, diagnostics, and fraud-prevention information.</li>
-        </ul>
-        <h2>3. Advertising services</h2>
-        <p>Cozy Cafe uses the following third-party services:</p>
-        <ul>
-          <li><strong>Yandex Mobile Ads</strong> — used for selected system languages. See the <a href="https://yandex.com/legal/confidential/" rel="noopener">Yandex Privacy Policy</a>.</li>
-          <li><strong>Unity Ads</strong> — used for other system languages. See the <a href="https://unity.com/legal/privacy-policy" rel="noopener">Unity Privacy Policy</a>.</li>
-        </ul>
-        <p>These providers may use data to deliver and measure ads, limit repeated ads, detect fraud, maintain security, and provide contextual or personalized advertising where permitted. Their processing and retention practices are governed by their own policies.</p>
-        <h2>4. How information is used</h2>
-        <ul><li>to save and restore gameplay on the device;</li><li>to provide rewarded ads and interstitial ads;</li><li>to measure ad performance and prevent invalid traffic;</li><li>to maintain app and advertising service reliability and security.</li></ul>
-        <h2>5. Sharing</h2>
-        <p>We do not sell personal information. Advertising-related data may be transmitted directly from the app to Yandex or Unity through their SDKs. The developer does not operate a user-account backend and does not receive an identifiable player profile from the game.</p>
-        <h2>6. Storage and deletion</h2>
-        <p>Local game progress remains on the device until the app data is cleared or the app is uninstalled. You may delete it through Android settings by clearing Cozy Cafe storage, or by uninstalling the app.</p>
-        <p>For data processed by Yandex or Unity, use the privacy controls and request methods described in their policies. You may also contact us and we will assist with requests relating to data under our control.</p>
-        <h2>7. Children</h2>
-        <p>Cozy Cafe is not primarily directed to children as defined by applicable law. We do not knowingly ask children to provide personal information. If you believe a child has provided personal information, contact us.</p>
-        <h2>8. Security and international processing</h2>
-        <p>Advertising providers state that covered data is protected in transit. Data may be processed in countries other than your own, subject to the providers’ safeguards and applicable law.</p>
-        <h2>9. Changes</h2>
-        <p>We may update this policy when the app, SDKs, or legal requirements change. The effective date at the top of this page will be updated.</p>
-        <div class="contact"><strong>Contact</strong><p>Medalion Inc<br><a href="mailto:MedalionInc@gmail.com">MedalionInc@gmail.com</a></p></div>
-      </article>
-      <article id="ru" class="lang" hidden>
-        <p class="meta"><strong>Дата вступления в силу:</strong> 14 ноября 2026 года</p>
-        <div class="notice"><strong>Кратко:</strong> Cozy Cafe не требует создания аккаунта и хранит игровой прогресс локально на устройстве. Для показа рекламы с вознаграждением и межстраничной рекламы используются Yandex Mobile Ads и Unity Ads.</div>
-        <h2>1. Кто мы</h2>
-        <p>Настоящая Политика относится к Android-игре <strong>Cozy Cafe</strong> (имя пакета <code>com.medalioninc.cozycafe</code>), предоставляемой <strong>Medalion Inc</strong> («мы» или «разработчик»).</p>
-        <h2>2. Какие сведения обрабатывает приложение</h2>
-        <p>Игра не требует создания аккаунта и напрямую не запрашивает имя, email, номер телефона, контакты, фотографии, доступ к микрофону, камере или точному местоположению.</p>
-        <ul>
-          <li><strong>Локальные игровые данные:</strong> прогресс, настройки, заработанная валюта, улучшения и аналогичные сведения хранятся локально на устройстве.</li>
-          <li><strong>Язык системы:</strong> приложение читает основной язык системы для выбора языка игры и рекламного провайдера. Выбор выполняется на устройстве.</li>
-          <li><strong>Технические и рекламные данные:</strong> сторонние рекламные SDK могут обрабатывать идентификаторы устройства или рекламный идентификатор, приблизительное местоположение на основе IP, просмотры рекламы и взаимодействия с ней, сигналы использования приложения, диагностические данные и сведения для предотвращения мошенничества.</li>
-        </ul>
-        <h2>3. Рекламные сервисы</h2>
-        <p>В Cozy Cafe используются:</p>
-        <ul>
-          <li><strong>Yandex Mobile Ads</strong> — для выбранных языков системы. См. <a href="https://yandex.ru/legal/confidential/" rel="noopener">Политику конфиденциальности Яндекса</a>.</li>
-          <li><strong>Unity Ads</strong> — для остальных языков системы. См. <a href="https://unity.com/legal/privacy-policy" rel="noopener">Политику конфиденциальности Unity</a>.</li>
-        </ul>
-        <p>Эти сервисы могут использовать данные для показа и измерения рекламы, ограничения повторных показов, противодействия мошенничеству, обеспечения безопасности, а также для контекстной или персонализированной рекламы, когда это разрешено.</p>
-        <h2>4. Для чего используются сведения</h2>
-        <ul><li>для сохранения и восстановления прогресса на устройстве;</li><li>для показа рекламы с вознаграждением и межстраничной рекламы;</li><li>для измерения эффективности рекламы и предотвращения недействительного трафика;</li><li>для стабильности и безопасности приложения и рекламных сервисов.</li></ul>
-        <h2>5. Передача данных</h2>
-        <p>Мы не продаём персональные данные. Рекламные сведения могут передаваться непосредственно из приложения компаниям Yandex или Unity через их SDK. Разработчик не использует сервер аккаунтов и не получает из игры идентифицируемый профиль игрока.</p>
-        <h2>6. Хранение и удаление</h2>
-        <p>Локальный прогресс хранится до очистки данных приложения или его удаления. Удалить его можно в настройках Android, очистив хранилище Cozy Cafe, либо удалив приложение.</p>
-        <p>Для данных, обрабатываемых Yandex или Unity, используйте настройки и способы подачи запросов из их политик. Вы также можете написать нам по вопросам данных, находящихся под нашим контролем.</p>
-        <h2>7. Дети</h2>
-        <p>Cozy Cafe не предназначена преимущественно для детей в значении применимого законодательства. Мы сознательно не просим детей предоставлять персональные данные. Если вы считаете, что ребёнок предоставил такие сведения, свяжитесь с нами.</p>
-        <h2>8. Безопасность и международная обработка</h2>
-        <p>Рекламные провайдеры заявляют о защите передаваемых данных. Данные могут обрабатываться в странах, отличных от страны пользователя, с учётом мер защиты провайдеров и применимого права.</p>
-        <h2>9. Изменения</h2>
-        <p>Мы можем обновлять Политику при изменении приложения, SDK или требований законодательства. Дата в начале страницы будет обновлена.</p>
-        <div class="contact"><strong>Контакты</strong><p>Medalion Inc<br><a href="mailto:MedalionInc@gmail.com">MedalionInc@gmail.com</a></p></div>
-      </article>
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <span class="eyebrow">Independent game studio</span>
+          <h1 id="hero-title">Small worlds.<br>Big heart.</h1>
+          <p>We create warm, approachable games built around satisfying progression and memorable everyday stories.</p>
+        </div>
+        <div class="scene" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="spark s1">✦</div><div class="spark s2">✦</div>
+          <div class="cafe"><div class="emoji">☕</div><strong>Cozy Cafe</strong></div>
+        </div>
+      </section>
+      <section id="games">
+        <div class="section-head"><div><span class="eyebrow">Our games</span><h2>Play, grow, make it yours</h2></div><p>Official game information and policies.</p></div>
+        <div class="games">
+          <article class="game">
+            <div class="game-icon" aria-hidden="true">☕</div>
+            <h3>Cozy Cafe</h3>
+            <p>Build your own welcoming cafe, serve guests and grow a tiny restaurant into something special.</p>
+            <a class="button" href="/cozy-cafe-privacy.html">Privacy policy <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="game coming">
+            <div><div class="game-icon" aria-hidden="true" style="margin:auto;background:#f3e9da">✦</div><h3>More games are coming</h3><p>New worlds will appear here.</p></div>
+          </article>
+        </div>
+      </section>
+      <section id="support">
+        <div class="support"><div><h2>Need help?</h2><p>Questions about a game, privacy or support.</p></div><a href="mailto:MedalionInc@gmail.com">MedalionInc@gmail.com</a></div>
+      </section>
     </main>
-    <footer>© 2026 Medalion Inc · Cozy Cafe</footer>
+    <footer><span>© 2026 MedalionInc</span><span><a href="/app-ads.txt">Authorized digital sellers</a></span></footer>
   </div>
-  <script>
-    const buttons=[...document.querySelectorAll('[data-lang]')];
-    function setLanguage(lang){
-      document.documentElement.lang=lang;
-      document.querySelectorAll('.lang').forEach(x=>x.hidden=x.id!==lang);
-      buttons.forEach(x=>x.classList.toggle('active',x.dataset.lang===lang));
-      try{localStorage.setItem('privacy-language',lang)}catch(e){}
-    }
-    buttons.forEach(x=>x.addEventListener('click',()=>setLanguage(x.dataset.lang)));
-    let initial='en';try{initial=localStorage.getItem('privacy-language')||(/^(ru|be|kk|hy|az|ky|ro|tg|uz|tk)/i.test(navigator.language)?'ru':'en')}catch(e){}
-    setLanguage(initial);
-  </script>
 </body>
 </html>
